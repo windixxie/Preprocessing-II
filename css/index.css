@@ -184,13 +184,18 @@ header nav {
   header nav {
     width: 95%;
     flex-wrap: wrap;
-    justify-items: center;
-    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5px;
   }
 }
 header nav #logo {
   font-size: 40px;
   margin-right: auto;
+}
+@media (max-width: 500px) {
+  header nav #logo {
+    margin-left: 35%;
+  }
 }
 header nav a {
   text-decoration: none;

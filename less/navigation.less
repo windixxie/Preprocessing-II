@@ -13,13 +13,17 @@ header {
         @media @mobile {
             width: 95%;
             flex-wrap: wrap;
-            justify-items: center;
-            align-items: center;
+            flex-direction: column;
+            margin-bottom: 5px;
         }
 
         #logo {
             font-size: 40px;
             margin-right: auto;
+
+            @media @mobile {
+                margin-left: 35%;
+            }
         }
         
         a {
