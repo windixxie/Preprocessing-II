@@ -1,1 +1,19 @@
 // Mixins in here
+
+.borderline() {
+    border-bottom: 2px dashed @navigation-border;
+}
+
+.allMargins() {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto; 
+}
+
+.btn-style(@button-bg, @white) {
+    background: @eastern-blue;
+    color: @white;
+    border-radius: 10px;
+    font-size: @btn-font;
+    padding: @btn-pad;
+}
