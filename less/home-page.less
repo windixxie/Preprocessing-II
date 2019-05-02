@@ -55,6 +55,11 @@
     padding-bottom: 30px;
     .borderline();
 
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
@@ -64,11 +69,6 @@
       padding-right: 1%;
       padding-left: 0;
     }
-
-    // @media @phone {
-    //   display: flex;
-    //   flex-direction: column-reverse;
-    // }
   }
 
   .content-destination {
@@ -90,9 +90,19 @@
     display: flex;
     justify-content: space-between;
 
+      @media @mobile {
+        display: flex;
+        flex-direction: column;
+      }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+        @media @mobile {
+          width: 80%;
+          margin: 30px auto;
+        }
       
       .btn {
         .btn-style(@button-bg, @white);
@@ -102,6 +112,10 @@
             color: @eastern-blue;
             border: 1px solid @eastern-blue;
           }
+
+        @media @mobile {
+          margin-left: 50px;
+        }
       }
     }
   }
