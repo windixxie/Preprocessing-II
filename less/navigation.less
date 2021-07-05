@@ -1,1 +1,37 @@
 // Navigation Styles here
+
+header {
+    width: 100%;
+    .borderline();
+
+    nav {
+        .allMargins();
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 20px;
+
+        @media @mobile {
+            width: 95%;
+            flex-wrap: wrap;
+            flex-direction: column;
+            margin-bottom: 5px;
+        }
+
+        #logo {
+            font-size: 40px;
+            margin-right: auto;
+
+            @media @mobile {
+                margin-left: 35%;
+            }
+        }
+        
+        a {
+            text-decoration: none;
+            color: @shark;
+            font-size: 17px;
+            margin-right: 20px;
+            }
+    }
+}
+
